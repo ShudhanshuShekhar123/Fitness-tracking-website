@@ -1,0 +1,32 @@
+.home{
+    background-color: #333 ;
+}
+
+.workout{
+   width: 90%;
+   margin: auto;
+   
+}
+
+.workoutgrid{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4,1fr);
+}
+.workoutgrid img{
+    width: 100%;
+    border-radius: 10px;
+}
+.spotlight{
+    width: 90%;
+    margin: auto;
+}
+.spotlightgrid{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2,1fr);
+}
+.spotlightgrid img{
+    width: 100%;
+    border-radius: 10px;
+}
