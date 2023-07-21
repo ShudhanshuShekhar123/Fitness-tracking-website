@@ -20,7 +20,7 @@ export const reducer = (state = initialState, action) => {
         isAuth: true,
         name: action.payload.name,
         token: action.payload.token,
-        isSubscribed: action.payload.Subscribed,
+        isSubscribed: action.payload.subscription,
       };
     case LOGIN_FAILURE:
       return { ...state, isLoading: false, isError: true };
