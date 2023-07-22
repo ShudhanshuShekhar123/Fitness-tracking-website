@@ -4,6 +4,7 @@ import Home from "./Pages/Homepage";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import SimpleSlider from "./Components/Carousel";
+import MainRoutes from "./Pages/MainRoutes";
 
 
 
@@ -12,7 +13,8 @@ function App() {
     <div className="App">
       {/* <Login /> */}
       <Navbar/>
-      <Home />
+      <MainRoutes/>
+      {/* <Home /> */}
       <Footer/>
    
     </div>
