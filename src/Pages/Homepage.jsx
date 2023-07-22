@@ -3,7 +3,7 @@ import styles from './Home.module.css';
 import { SimpleGrid } from '@chakra-ui/react';
 import SimpleSlider from '../Components/Carousel';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div style={{width:"98.7vw"}} className={styles.home}>
       <div style={{ margin:"auto" }}>
@@ -61,4 +61,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
