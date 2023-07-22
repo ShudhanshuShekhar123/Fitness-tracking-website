@@ -1,15 +1,25 @@
+.mainContainer{
+    background-image: url("https://images.pexels.com/photos/4552681/pexels-photo-4552681.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover; /* Adjust the size of the background image to cover the entire element */
+    background-position: center center; /* Center the background image horizontally and vertically */
+    padding: 7%;
+}
 .exercises_category_container{
     display: grid;
-    /* border: 1px solid red; */
+    /* border: 3px solid red; */
     grid-template-columns: repeat(2,1fr);
-    gap:20px;
-    width: 100%;
-    padding-left:6%;
+    gap:40px;
+    width: 90%;
+    padding-left:8%;
+    /* margin-top: 50px; */
+    /* margin:6% 0px; */
+    /* */
     /* margin: 0px 2%; */
 }
 .card1{
     background-image:url("https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=600") ;
     height: 400px;
+    /* height: auto; */
     width: 90%;
 }
 .card2{

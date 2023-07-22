@@ -1,11 +1,10 @@
 import {Routes,Route} from "react-router-dom"
 import React from 'react'
 import Login from "./Login"
-import Exercises_categoryPage from "./Exercises_categoryPage"
-// import HomePage from "./HomePage"
 import Gym from "./Gym"
 import NotFoundPage from "./NotFoundPage"
 import HomePage from "./Homepage"
+import Exercises_CategoryPage from "./Exercises_CategoryPage"
 
 
 const MainRoutes = () => {
@@ -20,7 +19,7 @@ const MainRoutes = () => {
     },
     {
       path: '/categories',
-      element: <Exercises_categoryPage/>
+      element: <Exercises_CategoryPage/>
     },
     {
       path: '/gym',
