@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-// import { styled } from "styled-components";
-import "../Pages/login_register.css";
 import { login, register } from "../Redux/AuthReducer/action";
 import { useDispatch } from "react-redux";
-
+import "./login.css"
 const Login = () => {
   const dispatch = useDispatch();
 
@@ -36,7 +34,8 @@ const Login = () => {
   };
 
   return (
-    <div className="section">
+    <div id="loginContainer">
+      <div className={`section`} >
       <div className="container">
         <div className="row full-height justify-content-center">
           <div className="col-12 text-center align-self-center py-5">
@@ -178,6 +177,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

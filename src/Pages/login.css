@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
-body {
+#loginContainer {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   line-height: 1.7;
   color: #020305;
-  /* background-color: #1f2029; */
+  background-color: #1f2029;
   background-image: url("../images/login_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -188,3 +188,18 @@ h6 span {
   color: #ffeba7;
   box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
 }
+/* .login-page-container {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #020305;
+  background-image: url("../images/login_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-page-container .head,
+.login-page-container input,
+.login-page-container i {
+  color: #ffeba7;
+} */

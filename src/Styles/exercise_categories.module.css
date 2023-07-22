@@ -1,0 +1,36 @@
+.exercises_category_container{
+    display: grid;
+    /* border: 1px solid red; */
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    width: 100%;
+    padding-left:6%;
+    /* margin: 0px 2%; */
+}
+.card1{
+    background-image:url("https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=600") ;
+    height: 400px;
+    width: 90%;
+}
+.card2{
+    background-image:url("https://images.pexels.com/photos/2035101/pexels-photo-2035101.jpeg?auto=compress&cs=tinysrgb&w=600") ;
+    height: 400px;
+    width: 90%;
+}
+.card3{
+    background-image:url("https://images.pexels.com/photos/8401792/pexels-photo-8401792.jpeg?auto=compress&cs=tinysrgb&w=600") ;
+    height: 400px;
+    width: 90%;
+}
+.card4{
+    background-image:url("https://images.pexels.com/photos/6009151/pexels-photo-6009151.jpeg?auto=compress&cs=tinysrgb&w=600") ;
+    height: 400px;
+    width: 90%;
+}
+.textInsideCard{
+    color: aliceblue;
+    padding-top:25%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    /* border:1px solid red */
+}

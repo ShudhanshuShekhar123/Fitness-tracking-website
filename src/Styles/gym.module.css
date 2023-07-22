@@ -1,0 +1,56 @@
+.mainContainer{
+    background-image: url("https://img.freepik.com/premium-vector/abstract-fire-flames-background_114588-495.jpg?size=626&ext=jpg&ga=GA1.1.2078928504.1680491462&semt=ais");
+    background-size: cover; /* Adjust the size of the background image to cover the entire element */
+    background-position: center center; /* Center the background image horizontally and vertically */
+}
+.gymContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    width: 90%;
+    /* border:3px solid red; */
+    /* padding:5%; */
+    margin:auto;
+    /* margin: 50px ; */
+}
+.card1{
+    height:400px;
+    /* width: 400px; */
+    background-image: url("https://images.pexels.com/photos/3768913/pexels-photo-3768913.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+.card2{
+    height:400px;
+    /* width: 400px; */
+    background-image: url("https://images.pexels.com/photos/4944978/pexels-photo-4944978.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+.card3{
+    height:400px;
+    /* width: 400px; */
+    background-image: url("https://images.pexels.com/photos/4720238/pexels-photo-4720238.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+.card4{
+    height:400px;
+    /* width: 400px; */
+    background-image: url("https://img.freepik.com/free-photo/portrait-muscular-strong-shirtless-male-bodybuilder_171337-4570.jpg?size=626&ext=jpg&ga=GA1.1.2078928504.1680491462&semt=ais");
+   
+}
+.card5{
+    height:400px;
+    /* width: 400px; */
+    background-image: url("https://img.freepik.com/free-photo/man-training-with-weight-lifting_23-2149307951.jpg?size=626&ext=jpg&ga=GA1.2.2078928504.1680491462&semt=ais");
+}
+.card6{
+    height:400px;
+    /* width: 400px; */
+    background-image: url("https://images.pexels.com/photos/13451629/pexels-photo-13451629.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+.card{
+    color:aliceblue;
+    background-size: cover; /* Adjust the size of the background image to cover the entire element */
+  background-position: center center; /* Center the background image horizontally and vertically */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+   margin: 100px 0px;
+}
+/* This is fiery oranges blend */
+/* https://img.freepik.com/premium-vector/abstract-glow-twist-background_230977-4749.jpg?size=626&ext=jpg&ga=GA1.1.2078928504.1680491462&semt=ais */
