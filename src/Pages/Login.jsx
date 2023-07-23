@@ -32,7 +32,7 @@ const Login = () => {
   const HandelLogin = () => {
     console.log(loginform);
     dispatch(login(loginform));
-    alert("Login Successfully")
+    alert("Login Successfully");
   };
 
   return (
@@ -183,7 +183,7 @@ const Login = () => {
                             <i className="input-icon uil uil-lock-alt"></i>
                           </div>
                           <button
-                            className="btn mt-4"
+                            className="btnx mt-4"
                             onClick={() => HandelRegister()}
                           >
                             Register
