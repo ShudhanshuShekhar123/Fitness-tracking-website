@@ -10,7 +10,7 @@ const AdminSidebar = () => {
                 <SidebarMenu>
                     <SidebarTitle>Dashboard</SidebarTitle>
                     <SidebarList>
-                       <Link to="/admin" className='link'>
+                       <Link to="/admin" className='link' >
                             <SidebarListItem>
                                 <MyLineStyle />
                                 Home
@@ -97,6 +97,7 @@ const SidebarContainer = styled.div`
     background-color: rgb(251, 251, 255);
     position: sticky;
     top: 50px;
+    margin-top:60px
 `
 const SidebarWrapper = styled.div`
     padding: 20px;
@@ -107,7 +108,7 @@ const SidebarMenu = styled.div`
 `
 const SidebarTitle = styled.h3`
     font-size: 13px;
-    color: rgb(187, 186, 186);
+    /* color: rgb(187, 186, 186); */
 `
 const SidebarList = styled.ul`
     list-style: none;
@@ -119,6 +120,7 @@ const SidebarListItem = styled.li`
     display: flex;
     align-items: center;
     border-radius: 10px;
+    color:black;
 &:hover {
         background-color: rgb(240, 240, 255);
     }

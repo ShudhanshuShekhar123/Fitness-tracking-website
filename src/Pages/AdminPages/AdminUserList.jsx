@@ -118,6 +118,7 @@ export const TheList = styled.div`
   flex: 4;
   height: 650px;
   width: '100%';
+  margin-top:60px
 `;
 export const ListItem = styled.div`
   display: flex;
