@@ -102,6 +102,7 @@ display:flex
 
 export const TheList = styled.div`
     flex: 4;
+    margin-top:60px;
 `
 const UserForm = styled.form`
     display: flex;
@@ -124,6 +125,7 @@ const UserItem = styled.div`
         padding: 10px;
         border: 1px solid gray;
         border-radius: 5px;
+        color:black
     }
     select{
         height: 40px;

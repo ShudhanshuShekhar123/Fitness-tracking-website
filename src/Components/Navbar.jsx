@@ -19,7 +19,9 @@ import {
   useColorMode,
   useDisclosure,
 } from '@chakra-ui/react';
+
 import logopng from './InfinityFITLogo.png';
+
 import { MoonIcon, SearchIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
