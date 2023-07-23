@@ -43,6 +43,7 @@ const Navbar = () => {
           Gym
         </Link>
       </div>
+
       <div className={style.switchDiv}>
         <Button onClick={toggleColorMode} justifySelf={"flex-end"}>
           {colorMode === "light" ? <MoonIcon /> : <SunIcon />}

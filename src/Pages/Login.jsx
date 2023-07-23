@@ -32,6 +32,7 @@ const Login = () => {
   const HandelLogin = () => {
     console.log(loginform);
     dispatch(login(loginform));
+    alert("Login Successfully")
   };
 
   return (
