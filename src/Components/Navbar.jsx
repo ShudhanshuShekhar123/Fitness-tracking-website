@@ -25,9 +25,11 @@ const Navbar = () => {
           Exercise
         </Link>
       </div>
+      <Link to={"/admin"}>
       <div className={styles.icons}>
         <BiUserCircle size={"40px"} />
       </div>
+      </Link>
       <div className={styles.hamburger} onClick={drawerHandle}>
         <GiHamburgerMenu />
       </div>
