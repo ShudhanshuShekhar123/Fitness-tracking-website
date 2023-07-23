@@ -5,10 +5,12 @@ import Gym from "./Gym"
 import NotFoundPage from "./NotFoundPage"
 import HomePage from "./Homepage"
 import Exercises_CategoryPage from "./Exercises_categoryPage"
+ 
 import {Adminpage} from "./AdminPages/AdminPage"
 import AdminUserList from "./AdminPages/AdminUserList"
 import AdminUser from "./AdminPages/AdminUser";
 import AdminNewUser from "./AdminPages/AdminNewUser"
+
 
 
 const MainRoutes = () => {
