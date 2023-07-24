@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "../Pages/login_register.css";
 import { login, register } from "../Redux/AuthReducer/action";
 import { useDispatch } from "react-redux";
+import Navbar from "../Components/Navbar";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -32,7 +33,7 @@ const Login = () => {
   const HandelLogin = () => {
     console.log(loginform);
     dispatch(login(loginform));
-    alert("Login Successfully")
+    alert("Login Successfully");
   };
 
   return (
@@ -183,7 +184,7 @@ const Login = () => {
                             <i className="input-icon uil uil-lock-alt"></i>
                           </div>
                           <button
-                            className="btn mt-4"
+                            className="btnx mt-4"
                             onClick={() => HandelRegister()}
                           >
                             Register

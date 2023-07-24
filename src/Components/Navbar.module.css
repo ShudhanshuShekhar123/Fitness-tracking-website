@@ -12,10 +12,11 @@
   background-color: transparent;
   font-family: 'Poppins', sans-serif;
   position: absolute;
+  overflow: visible;
   /* background-color: #333; */
   /* backdrop-filter: blur(1px); */
   color: white;
-  position: fixed;
+  /* position: fixed; */
   box-shadow: rgba(0, 0, 0, 0.24)  0px 3px 7px inset;
 }
 
@@ -46,6 +47,7 @@
 .navRoutes{
   display: flex;
   gap: 20px;
+  /* color:white */
 
  
 }
@@ -169,4 +171,17 @@
   .switchDiv>span{
       font-size: 20px;
   }
+}
+
+
+.navRoutes{
+  color:white;
+}
+
+.navbar{
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px  inset; */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;/ */
+  background-color: grey;
+  opacity: 0.8;
+  /* padding-bottom: 20px; */
 }
