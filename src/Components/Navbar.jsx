@@ -27,7 +27,7 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <div className={style.navbar} style={{ zIndex: "5" }}>
+    <div className={style.navbar} style={{ zIndex: "5"}}>
       <div className={style.logoDiv}>
         <img src={logopng} alt="logo" />
         <Input size='sm' placeholder='Search for Destinations' border='1px' bg='transparent' borderRadius='25px' />
