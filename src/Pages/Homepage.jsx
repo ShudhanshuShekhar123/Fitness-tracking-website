@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Home.module.css';
 import { SimpleGrid } from '@chakra-ui/react';
 import SimpleSlider from '../Components/Carousel';
+import Navbar from '../Components/Navbar';
 
 const HomePage = () => {
   return (
