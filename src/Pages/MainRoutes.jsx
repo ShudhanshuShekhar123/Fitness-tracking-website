@@ -10,6 +10,7 @@ import {Adminpage} from "./AdminPages/AdminPage"
 import AdminUserList from "./AdminPages/AdminUserList"
 import AdminUser from "./AdminPages/AdminUser";
 import AdminNewUser from "./AdminPages/AdminNewUser"
+import { AdminLogin } from "./AdminPages/AdminLogin"
 
 
 
@@ -50,6 +51,10 @@ const MainRoutes = () => {
     {
       path:'/newUser',
       element:<AdminNewUser/>
+    },
+    {
+      path:'/AdminLogin',
+      element:<AdminLogin/>
     }
   ];
 

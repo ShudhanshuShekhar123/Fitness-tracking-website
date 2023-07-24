@@ -5,28 +5,30 @@ import { AdminFeatured } from "../../Components/AdminParts/AdminFeatured";
 
 
 export const AdminHomePage = () => {
-  const [userData, setUserData] = useState([]);
+  const [exerciseData, setExercise] = useState([]);
 
-  useEffect(() => {
-    
-    fetch("https://fitness-palace.onrender.com/admin/exercise", {
-      method: "GET",
-      headers: {
-        authorization: `Bearer ${localStorage.getItem("token")}`,
-      },
-    })
-      .then((res) => res.json())
-      .then((data) => setUserData(data))
-      .catch((err) => console.log(err));
+  useEffect(async () => {
+    try {
+      const res = await fetch("https://fitness-track-27nw.onrender.com/admin/exercise", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          authorization: `${localStorage.getItem("token")}`,
+        },
+      });
+      const data = await res.json();
+      console.log(data);
+      setExercise(data); // Set exerciseData to the parsed JSON data, not res
+    } catch (error) {
+      console.log(error);
+    }
   }, []);
 
   return (
-   
     <HomeContainer>
-      <AdminFeatured userData={userData} />
-      <AdminChart data={userData} title="Data Analytic" grid dataKey="students" />
+      <AdminFeatured exerciseData={exerciseData} /> {/* Pass exerciseData to AdminFeatured */}
+      <AdminChart data={exerciseData} title="Data Analytic" grid dataKey="students" />
     </HomeContainer>
-    
   );
 };
 
