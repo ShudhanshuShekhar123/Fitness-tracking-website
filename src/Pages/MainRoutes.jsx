@@ -1,15 +1,18 @@
 
-import { Routes, Route } from "react-router-dom";
-import React from "react";
-import Login from "./Login";
-import Gym from "./Gym";
-import NotFoundPage from "./NotFoundPage";
-import HomePage from "./Homepage";
-import Exercises_CategoryPage from "./Exercises_categoryPage";
-import { Adminpage } from "./AdminPages/AdminPage";
-import AdminUserList from "./AdminPages/AdminUserList";
+import { Routes, Route } from "react-router-dom"
+import React from 'react'
+import Login from "./Login"
+import Gym from "./Gym"
+import NotFoundPage from "./NotFoundPage"
+import HomePage from "./Homepage"
+import { Adminpage } from "./AdminPages/AdminPage"
+import AdminUserList from "./AdminPages/AdminUserList"
 import AdminUser from "./AdminPages/AdminUser";
-import AdminNewUser from "./AdminPages/AdminNewUser";
+import AdminNewUser from "./AdminPages/AdminNewUser"
+import Dashboard from "./Dashboard"
+import Exercises_CategoryPage from "./Exercises_CategoryPage";
+import { Adminpage } from "./AdminPages/AdminPage";
+
 import GymExcercises from "./GymExcercises";
 import WorkoutVideo from "./WorkoutVideo";
 
@@ -54,11 +57,21 @@ const MainRoutes = () => {
     {
       path: "/bodypart/:id",
       element: <GymExcercises />,
+
     },
+
+    //aded now
+
     {
+
+      path: '/dashboard',
+      element: <Dashboard />
+    }
+
       path: "/WorkoutVideo/:id",
       element: <WorkoutVideo />,
     },
+
   ];
 
   return (
