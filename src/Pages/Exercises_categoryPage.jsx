@@ -2,6 +2,7 @@ import React from 'react'
 // import exerciseImage from '../images/gym_image.jpg'
 import styles from "../Styles/exercise_categories.module.css"
 import { Link } from 'react-router-dom'
+import Navbar from '../Components/Navbar'
 const Exercises_CategoryPage = () => {
   return (
     <div className={styles.mainContainer}>

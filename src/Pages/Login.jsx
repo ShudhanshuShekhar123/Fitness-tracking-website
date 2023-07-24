@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "../Pages/login_register.css";
 import { login, register } from "../Redux/AuthReducer/action";
 import { useDispatch } from "react-redux";
+import Navbar from "../Components/Navbar";
 
 const Login = () => {
   const dispatch = useDispatch();
