@@ -75,11 +75,11 @@ const MainRoutes = () => {
       path: '/dashboard',
       element: <Dashboard />
 
-    }
-
-      path: "/WorkoutVideo/:id",
-      element: <WorkoutVideo />,
     },
+    {
+      path: "/WorkoutVideo/:id",
+      element: <WorkoutVideo />
+    }
 
   ];
 
