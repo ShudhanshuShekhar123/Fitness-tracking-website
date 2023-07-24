@@ -8,37 +8,30 @@ import AdminSidebar from '../../Components/AdminParts/AdminSidebar';
 const AdminUserList = () => {
   const [data, setData] = useState([]);
 
-  const fetchData = async () => {
+  useEffect(async () => {
     try {
-      const token = localStorage.getItem("token");
-
-      const response = await fetch("https://fitness-palace.onrender.com/admin/exercise", {
+      const response = await fetch("https://fitness-track-27nw.onrender.com/admin/exercise", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          authorization: `Bearer ${token}`,
+          authorization: `${localStorage.getItem("token")}`,
         },
       });
-
       const jsonData = await response.json();
-      setData(jsonData);
+      const dataWithId = jsonData.map((row, index) => ({ ...row, id:row._id }));
+      setData(dataWithId);
     } catch (error) {
       console.error(error);
     }
-  };
- 
-  useEffect(() => {
-    fetchData();
   }, []);
 
   const handleDelete = (id) => {
-    const token = localStorage.getItem("token");
-
-    fetch(`https://fitness-palace.onrender.com/admin/delete/${id}`, {
+    console.log(id)
+    fetch(`https://fitness-track-27nw.onrender.com/admin/delete/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
-        authorization: `Bearer ${token}`,
+        authorization: `${localStorage.getItem("token")}`,
       },
     })
       .then((response) => {
@@ -46,7 +39,7 @@ const AdminUserList = () => {
           // Handle error response
           throw new Error("Network response was not ok.");
         }
-        setData(data.filter((item) => item.id !== id));
+        setData(data.filter((item) => item._id !== id)); // Use _id instead of id
       })
       .catch((error) => {
         console.error(error);

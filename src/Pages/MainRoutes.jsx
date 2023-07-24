@@ -9,9 +9,13 @@ import { Adminpage } from "./AdminPages/AdminPage"
 import AdminUserList from "./AdminPages/AdminUserList"
 import AdminUser from "./AdminPages/AdminUser";
 import AdminNewUser from "./AdminPages/AdminNewUser"
+
+import { AdminLogin } from "./AdminPages/AdminLogin"
+
 import Dashboard from "./Dashboard"
 import Exercises_CategoryPage from "./Exercises_CategoryPage";
 import { Adminpage } from "./AdminPages/AdminPage";
+
 
 import GymExcercises from "./GymExcercises";
 import WorkoutVideo from "./WorkoutVideo";
@@ -55,17 +59,22 @@ const MainRoutes = () => {
       element: <AdminNewUser />,
     },
     {
+
+      path:'/newUser',
+      element:<AdminNewUser/>
+    },
+    {
+      path:'/AdminLogin',
+
       path: "/bodypart/:id",
       element: <GymExcercises />,
 
     },
 
-    //aded now
-
     {
-
       path: '/dashboard',
       element: <Dashboard />
+
     }
 
       path: "/WorkoutVideo/:id",

@@ -13,7 +13,7 @@ export default function AdminUser () {
 
     const fetchData = async () => {
         try {
-          const response = await axios.get(`https://fitness-palace.onrender.com/admin/exercise/${id}`);
+          const response = await axios.get(`https://fitness-track-27nw.onrender.com/admin/exercise/${id}`);
           console.log("res",response.data)
           setData(response.data);
         } catch (error) {
@@ -33,7 +33,7 @@ export default function AdminUser () {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.patch(`https://fitness-palace.onrender.com/admin/update/${id}`, data);
+            const response = await axios.patch(`https://fitness-track-27nw.onrender.com/admin/update/${id}`, data);
             console.log(response.data);
             fetchData(); // refresh data after update
         } catch (error) {

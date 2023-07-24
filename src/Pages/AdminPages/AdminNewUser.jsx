@@ -22,19 +22,25 @@ const AdminNewUser = () => {
       });
     };
   
-    const handleSubmit = () => {
-      // Make the API call to add the new exercise data to the database
-      fetch("https://fitness-palace.onrender.com/admin/addexercise", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-        body: JSON.stringify(Exercisedata),
-      })
-        .then((res) => res.json())
-        .then((res) => {
-          console.log("API response:", res);
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        try {
+          const response = await fetch("https://fitness-track-27nw.onrender.com/admin/addexercise", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              authorization: `${localStorage.getItem("token")}`,
+            },
+            body: JSON.stringify(Exercisedata),
+          });
+      
+          if (!response.ok) {
+            throw new Error("Failed to add exercise data to the database.");
+          }
+      
+          const data = await response.json();
+          console.log("API response:", data);
+      
           setExercisedata({
             name: "",
             description: "",
@@ -45,9 +51,10 @@ const AdminNewUser = () => {
             img: "",
             video: "",
           });
-        })
-        .catch((err) => console.log(err));
-    };
+        } catch (error) {
+          console.error("Error adding exercise data:", error);
+        }
+      };
 
     return (
         <DIV>

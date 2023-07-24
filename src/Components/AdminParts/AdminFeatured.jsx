@@ -1,27 +1,35 @@
 import React from "react";
 import { ArrowUpward } from "@material-ui/icons";
 import styled from "styled-components";
+import {useState,useEffect} from "react";
 
 
-export const AdminFeatured = ({userData}) => {
+export const AdminFeatured = ({ exerciseData }) => {
+  const [users, setUsers] = useState([]);
+console.log(users)
 
+  useEffect( async() => {
+    try {
+      const res = await fetch("https://fitness-track-27nw.onrender.com/admin/getusers",{
+        method: "GET",
+        headers: {
+          "Content-Type":"application/json",
+          authorization: `${localStorage.getItem("token")}`,
+        },});
+        const data =await res.json();
+        console.log(data);
+         setUsers(data);
+    } catch (error) {
+      console.error("Error fetching users:", error);
+    }
+  },[]); 
 
-    const totalexercies = userData.reduce((total, el) => {
-      const Exercies = el.exercise;
-      const totalExercies = parseInt(Exercies);
-      return total + totalExercies;
-    }, 0);
-    
-    const subscriptionTotal = userData.reduce((total, el) => {
-      const Subscription = el.subscription;
-      const totalSubscription = parseInt(Subscription);
-      return total + totalSubscription;
-    }, 0);
-    
-    console.log("stu",totalexercies)
-    console.log("fac",subscriptionTotal)
+  const totalexercies = exerciseData.length;
+  const subscriptionTotal = users.filter((el) => el.subscription === true).length;
+  const totalUsers = users.length;
 
-    const totalUsers = userData.length;
+  console.log("stu", totalexercies);
+  // console.log("fac", subscriptionTotal);
     
   
     return (
@@ -31,7 +39,7 @@ export const AdminFeatured = ({userData}) => {
           <FeaturedMoneyContainer>
             <FeaturedMoney>{totalUsers}</FeaturedMoney>
             <FeaturedMoneyRate>
-              <FeaturedIcon up={true} />
+              <FeaturedIcon up={toString(true)} />
             </FeaturedMoneyRate>
           </FeaturedMoneyContainer>
           <FeaturedSub>Total number of Members</FeaturedSub>
@@ -41,7 +49,7 @@ export const AdminFeatured = ({userData}) => {
           <FeaturedMoneyContainer>
             <FeaturedMoney>{totalexercies}</FeaturedMoney>
             <FeaturedMoneyRate>
-              <FeaturedIcon up={true} />
+              <FeaturedIcon up={toString(true)} />
             </FeaturedMoneyRate>
           </FeaturedMoneyContainer>
           <FeaturedSub>Total number of Exercises</FeaturedSub>
@@ -51,7 +59,7 @@ export const AdminFeatured = ({userData}) => {
           <FeaturedMoneyContainer>
             <FeaturedMoney>{subscriptionTotal}</FeaturedMoney>
             <FeaturedMoneyRate>
-              <FeaturedIcon up={true} />
+              <FeaturedIcon up={toString(true)} />
             </FeaturedMoneyRate>
           </FeaturedMoneyContainer>
           <FeaturedSub>Total number of Subscription</FeaturedSub>
