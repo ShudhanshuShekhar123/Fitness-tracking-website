@@ -5,7 +5,7 @@ export const login = (details) => async (dispatch) => {
   dispatch({ type: LOGIN_REQUEST });
   try {
     const res = await axios.post(
-      "https://freaking-backend.onrender.com/user/login",
+      `https://fitness-place.onrender.com/user/login`,
       details
     );
     if (res.error) {
@@ -23,7 +23,7 @@ export const login = (details) => async (dispatch) => {
 export const register = (details) => async (dispatch) => {
   try {
     const res = await axios.post(
-      "https://freaking-backend.onrender.com/user/register",
+      "https://fitness-place.onrender.com/user/register",
       details
     );
     if (res.error) {
