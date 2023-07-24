@@ -24,7 +24,9 @@ import {
   useColorMode,
   useDisclosure,
 } from '@chakra-ui/react';
+
 import logopng from './InfinityFITLogo.png';
+
 import { MoonIcon, SearchIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
@@ -69,7 +71,10 @@ const Navbar = () => {
 
 
   return (
-    <div className={style.navbar} style={{ zIndex: "5",}}>
+
+
+    <div className={style.navbar} style={{ zIndex: "5"}}>
+
       <div className={style.logoDiv}>
         <img src={logopng} alt="logo" />
         {/* <Input size='sm' placeholder='Search for Destinations' border='1px' bg='transparent' borderRadius='25px' /> */}

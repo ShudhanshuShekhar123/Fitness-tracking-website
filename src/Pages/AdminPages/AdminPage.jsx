@@ -13,5 +13,5 @@ export const Adminpage = () =>{
 };
 
 const DIV = styled.div`
-display:flex
+display:flex;
 `

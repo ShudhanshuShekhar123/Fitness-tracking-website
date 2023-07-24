@@ -166,7 +166,7 @@ h6 span {
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.btn {
+.btnx {
   border-radius: 4px;
   height: 44px;
   font-size: 13px;
@@ -183,7 +183,7 @@ h6 span {
   background-color: #ffeba7;
   color: #000000;
 }
-.btn:hover {
+.btnx:hover {
   background-color: #000000;
   color: #ffeba7;
   box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);

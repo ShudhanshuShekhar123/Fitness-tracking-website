@@ -32,5 +32,6 @@ export const AdminHomePage = () => {
 
 const HomeContainer = styled.div`
   flex: 4;
+  margin-top:40px
 `;
 

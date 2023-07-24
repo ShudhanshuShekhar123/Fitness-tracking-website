@@ -5,8 +5,8 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import SimpleSlider from "./Components/Carousel";
 import MainRoutes from "./Pages/MainRoutes";
-
-
+import GymExcercises from "./Pages/GymExcercises";
+import WorkoutVideo from "./Pages/WorkoutVideo";
 
 function App() {
 
@@ -14,11 +14,12 @@ function App() {
   return (
     <div className="App">
       {/* <Login /> */}
-      <Navbar/>
-      <MainRoutes/>
+      <Navbar />
+      <MainRoutes />
       {/* <Home /> */}
-      <Footer/>
-   
+      <Footer />
+      {/* <GymExcercises /> */}
+      {/* <WorkoutVideo /> */}
     </div>
   );
 }

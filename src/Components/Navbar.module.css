@@ -12,10 +12,11 @@
   background-color: transparent;
   font-family: 'Poppins', sans-serif;
   position: absolute;
+  overflow: visible;
   /* background-color: #333; */
   /* backdrop-filter: blur(1px); */
   color: white;
-  position: fixed;
+  /* position: fixed; */
   box-shadow: rgba(0, 0, 0, 0.24)  0px 3px 7px inset;
 }
 
